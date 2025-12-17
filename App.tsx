@@ -109,7 +109,7 @@ const App: React.FC = () => {
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header cartCount={cart.reduce((acc, item) => acc + item.quantity, 0)} />
-        <main className="flex-1">
+        <main className="flex-1 pt-20 md:pt-24">
           <Routes>
             <Route path="/" element={<Home onAddToCart={addToCart} />} />
             <Route path="/shop" element={<Shop onAddToCart={addToCart} />} />

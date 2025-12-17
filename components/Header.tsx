@@ -28,13 +28,13 @@ const Header: React.FC<HeaderProps> = ({ cartCount }) => {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-[100] h-20 md:h-24 transition-all duration-500 ${
         scrolled 
-          ? 'py-4 bg-black/80 backdrop-blur-xl border-b border-white/5' 
-          : 'py-8 bg-transparent'
+          ? 'bg-black/80 backdrop-blur-xl border-b border-white/5' 
+          : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-6 h-full flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center group-hover:rotate-[15deg] transition-transform">
             <Dumbbell className="w-6 h-6 text-black" />
@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ cartCount }) => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 top-[72px] md:hidden bg-black/95 backdrop-blur-3xl z-[90] p-8 animate-in fade-in slide-in-from-top-10 duration-500">
+        <div className="fixed inset-0 top-20 md:hidden bg-black/95 backdrop-blur-3xl z-[90] p-8 animate-in fade-in slide-in-from-top-10 duration-500">
           <div className="space-y-10">
             {navLinks.map((link) => (
               <Link
