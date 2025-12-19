@@ -5,7 +5,7 @@ export const PRODUCTS: Product[] = [
     id: 'heg-1',
     name: 'Treadmill',
     category: 'Cardio',
-    price: 6500,
+    price: 8500,
     image: 'https://i.postimg.cc/zGX756rJ/1.jpg',
     description: 'Reliable home-use treadmill suitable for walking and light running. Ideal for daily cardio workouts.',
     rating: 4.8,
